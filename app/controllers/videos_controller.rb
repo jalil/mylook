@@ -1,7 +1,7 @@
 class VideosController < ApplicationController
   
   def index
-      @video = Video.find(1)
+      #@video = Video.find(1)
   end
 
   def show

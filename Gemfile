@@ -15,7 +15,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 gem 'minitest'
 gem 'haml-rails'
-gem 'youtube_it'
+gem 'youtube_it', github: 'kylejginavan/youtube_it'
 group :test do
   gem 'rspec-rails', '~>3.0.0'
   gem 'shoulda-matchers'

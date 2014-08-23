@@ -8,14 +8,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div  id="heaer"> 
+<div  id="header"> 
   <%=form_tag search_videos_path, method: 'post' do %>
-    <%=text_field_tag :search_term, params[:search_term], placeholder: "Search Videos" %>
+    <%=text_field_tag :search_term, params[:search_term], placeholder: "Search Videos" %></br>
     <%=submit_tag "Search", :name => nil%>
 <% end %>
 </div>
   <h1><div class="title"><%=link_to (image_tag "makeup.png", size: "120x90"), root_path %> </div></h1>
-</div>
 <%= yield %>
 
 </body>
