@@ -1,3 +1,7 @@
+%h4 Results
+-if @videos.blank?
+  %i "No results found"
+-else
 -@videos.each do |v|
   %ul
     %li

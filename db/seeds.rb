@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 require 'youtube_it'
-API_KEY = "AIzaSyCJQy1o0qwdB7LzwZ5gmLiSUUap6nfBpxw"
+API_KEY = env['YOUTUBE_API']
 client = YouTubeIt::Client.new(:dev_key => API_KEY)
 
 Video.destroy_all
